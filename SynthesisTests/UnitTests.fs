@@ -192,6 +192,7 @@ let ``toBinary`` () =
     toBinary 10 |> should equal "1010"
     toBinary 9688659 |> should equal "100100111101011001010011"
     toBinary 2147483647 |> should equal "1111111111111111111111111111111"
+    
 
 [<Test>]
 let ``bizFuzz`` () =
@@ -232,7 +233,8 @@ let ``monthDay`` () =
     monthDay 61 2020 |> should equal "March"
     monthDay 334 2020 |> should equal "November"
     monthDay 335 2020 |> should equal "November"
-    monthDay 336 2020 |> should equal "December"
+    monthDay 336 2020 |> should equal "December" 
+    
 
 [<Test>]
 let ``circle`` () =

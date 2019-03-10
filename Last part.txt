@@ -1,0 +1,7 @@
+
+let coord input = 
+    fun (k,p) -> 
+        let l,h=k
+        let y,o=h
+        let m,e=l
+        ((y-m)*(y-m)+(o-e)*(o-e))
