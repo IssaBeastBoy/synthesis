@@ -116,6 +116,9 @@ let monthDay y x =
 
 
 
-let coord _ = 
-    failwith ""
+let coord input1 = 
+    let l,h=input1
+    let y= fun (k,j)-> (((l-k)**2.0) + ((h-j)**2.0))**0.5 
+    let x = fun (e,q) t w -> (l>=e && l<=(e+t)) && (h<=q && h>=(q-w))
+    (y,x)                       
 
